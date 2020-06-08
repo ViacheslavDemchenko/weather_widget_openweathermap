@@ -1,0 +1,84 @@
+.main-title {
+    text-align: center;
+    margin-bottom: rem-calc(20);
+    padding: 0 rem-calc(20);
+    @include RobotoSlabBold();
+    font-size: rem-calc(18);
+    line-height: rem-calc(20);
+    color: #000;
+
+    @include sm-block() {
+        font-size: rem-calc(24);
+        line-height: rem-calc(26);
+    }
+
+    @include lg-block() {
+        margin-bottom: rem-calc(50);
+        font-size: rem-calc(32);
+        line-height: rem-calc(34);
+    }
+}
+
+.city-choice__title {
+    @extend .main-title;
+    margin-bottom: rem-calc(10);
+    font-size: rem-calc(16);
+    line-height: rem-calc(18);
+
+    @include sm-block() {
+        font-size: rem-calc(18);
+        line-height: rem-calc(20);
+    }
+
+    @include lg-block() {
+        font-size: rem-calc(20);
+        line-height: rem-calc(22);
+    }
+}
+
+.city-choice__inner input,
+.cities__item {
+    @include RobotoRegular();
+    font-size: rem-calc(16);
+    line-height: rem-calc(18);
+
+    @include lg-block() {
+        font-size: rem-calc(18);
+        line-height: rem-calc(20);
+    }
+}
+
+.widget__city {
+    @extend .main-title;
+    font-size: rem-calc(20);
+    line-height: rem-calc(22);
+    margin: rem-calc(10) 0 !important;
+
+    @include lg-block() {
+        font-size: rem-calc(22);
+        line-height: rem-calc(24);
+    }
+}
+
+.widget__date,
+.widget__time {
+    @include RobotoRegular();
+    font-size: rem-calc(14);
+    line-height: rem-calc(16);
+
+    @include lg-block() {
+        font-size: rem-calc(16);
+        line-height: rem-calc(18);
+    }
+}
+
+.widget__temp {
+    @extend .main-title;
+    margin-bottom: rem-calc(10) !important;
+}
+
+.data__title,
+.data__num {
+    @extend .widget__date;
+    padding: rem-calc(5);
+}

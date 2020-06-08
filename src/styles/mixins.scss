@@ -1,0 +1,17 @@
+/* FONTS */
+
+/* Roboto */
+
+@mixin RobotoRegular ($font-family: 'Roboto-Regular', $font-weight: 400, $font-style: normal) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+/* Roboto-Slab */
+
+@mixin RobotoSlabBold ($font-family: 'RobotoSlab-Bold', $font-weight: 700, $font-style: normal) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}

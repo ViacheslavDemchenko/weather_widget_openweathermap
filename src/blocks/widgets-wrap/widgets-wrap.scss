@@ -1,0 +1,61 @@
+.widgets-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: rem-calc(10) 0;
+
+    @include lg-block() {
+        padding: rem-calc(30) 0;
+    }
+}
+
+.widget {
+    width: rem-calc(290);
+    border: rem-calc(1) solid #cecece;
+    background: #fff;
+
+    @include lg-block() {
+        width: rem-calc(315);
+    }
+
+    &__date-time {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 0 rem-calc(10) 0;
+        padding: 0 rem-calc(5);
+    }
+
+    &__icon {
+        width: rem-calc(100);
+        height: rem-calc(100);
+        overflow: hidden;
+        margin: rem-calc(10) auto;
+    }
+
+    &-data {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.data-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: rem-calc(1) solid #cecece;
+
+    &:nth-child(even) {
+        background: rgba(#DCDCDC, 0.6);
+    }
+}
+
+.data__title {
+    width: 35%;
+}
+
+.data__num {
+    width: 65%;
+    text-align: right;
+}

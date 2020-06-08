@@ -1,0 +1,44 @@
+.city-choice {
+    @include col();
+    @include size-md(12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city-choice__inner {
+    position: relative;
+
+    input {
+        width: rem-calc(220);
+        padding: rem-calc(5) rem-calc(8);
+    }
+}
+
+.cities-list {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 rem-calc(10);
+    background: grey;
+
+    &--active {
+        max-height: rem-calc(232);
+        overflow-y: scroll;
+
+        @include lg-block() {
+            max-height: rem-calc(248);
+        }
+    }
+}
+
+.cities__item {
+    padding: rem-calc(5) rem-calc(5) rem-calc(5) 0;
+    border-bottom: rem-calc(1) solid #cecece;
+    cursor: pointer;
+
+    &:nth-child(even) {
+        background: rgba(#DCDCDC, 0.6);
+    }
+}

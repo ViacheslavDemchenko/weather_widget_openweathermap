@@ -1,0 +1,5 @@
+.widget-options {
+    @include row-flex();
+    justify-content: center;
+    padding: rem-calc(10) 0;
+}

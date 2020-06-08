@@ -1,0 +1,15 @@
+.main-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: rem-calc(10) 0;
+
+    @include lg-block() {
+        padding: rem-calc(20) 0;
+    }
+
+    &__inner {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
